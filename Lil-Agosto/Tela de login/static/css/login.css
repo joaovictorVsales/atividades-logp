@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#header{
+    background-image: linear-gradient(90deg, white, darkgrey);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150px;
+    font-size: 40px;
+}
+
+h1{
+    transform:translate(45%,30px); 
+    color: rgb(200,255,255);
+}
+
+#btn{
+    background-color: rgb(129, 255, 255);
+    color:black;
+    border:none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin-top: 15px;
+}
+
+#btn:hover{
+    background-color: rgb(72, 149, 149);
+    color: aliceblue;
+    cursor:pointer;
+}
+
+#form{
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.428);
+    height: 270px;
+    width: 270px;
+    transform:translate(7%, 90%);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(200,255,255);
+
+}
+
+h3{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    font-size: 20px;
+    background-color: rgba(102, 102, 102, 0.603);
+    color: white;
+}
+
+body{
+    background-image: linear-gradient(45deg, black, darkgrey); 
+    height: 1000px;   
+}

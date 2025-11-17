@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/info.css') }}">
+</head>
+<body>
+
+    <div id="header">
+        <h1>Painel do Usuário</h1>
+        <a href="{{ url_for('logout') }}">
+            <button id="btn-sair">Sair</button>
+        </a>
+    </div>
+
+    <div id="container">
+        <h2>Bem-vindo, {{ usuario }}!</h2>
+
+        <p class="info"><span>Status:</span> {{ dados.status }}</p>
+        <p class="info"><span>Nota:</span> {{ dados.nota }}</p>
+        <p class="info"><span>Gênero:</span> {{ dados.genero }}</p>
+        <p class="info"><span>Prontuário:</span> {{ dados.prontuario }}</p>
+        <p class="info"><span>Matéria:</span> {{ dados.materia }}</p>
+        <p class="info"><span>Professor:</span> {{ dados.prof }}</p>
+    </div>
+
+</body>
+</html>

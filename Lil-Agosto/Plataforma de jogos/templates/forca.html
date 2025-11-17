@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo da Forca</title>
+</head>
+<body>
+
+<h1>Jogo da Forca</h1>
+
+<p>Palavra: {{ " ".join(certas) }}</p>
+<p>Chances: {{ chances }}/5</p>
+<p>{{ mensagem }}</p>
+
+<form method="POST">
+    <input type="text" name="letra" maxlength="1" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<br>
+<a href="/"><button>Voltar</button></a>
+
+</body>
+</html>

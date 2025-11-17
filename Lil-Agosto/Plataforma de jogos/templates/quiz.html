@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>{{ pergunta }}</h2>
+
+    <form method="POST" action="/quiz/responder">
+        <button name="escolha" value="A">{{ A }}</button><br><br>
+        <button name="escolha" value="B">{{ B }}</button><br><br>
+        <button name="escolha" value="C">{{ C }}</button><br><br>
+        <button name="escolha" value="D">{{ D }}</button><br><br>
+
+        <button name="escolha" value="Z">Encerrar</button>
+    </form>
+
+    <br>
+    <a href="/">Voltar ao início</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Torre de Hanói</title>
+</head>
+<body>
+    <h1>Torre de Hanói</h1>
+
+    <p>{{ msg }}</p>
+
+    <h3>Torres:</h3>
+    <p>A: {{ torres.A }}</p>
+    <p>B: {{ torres.B }}</p>
+    <p>C: {{ torres.C }}</p>
+
+    <form method="POST">
+        <label>Origem: </label>
+        <select name="origem">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+
+        <label>Destino: </label>
+        <select name="destino">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+
+        <button type="submit">Mover</button>
+    </form>
+
+    <br>
+    <a href="/">Voltar ao início</a>
+</body>
+</html>
